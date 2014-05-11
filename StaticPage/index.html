@@ -1,0 +1,411 @@
+<!Doctype html>
+<html xmlns=http://www.w3.org/1999/xhtml>
+<head>
+  <meta http-equiv=Content-Type content="text/html;charset=utf-8">
+  <title>首页_品优PINYOU</title>
+
+  <link href="CSS/public.css" type=text/css rel=stylesheet>
+  <link href="CSS/css.css" type=text/css rel=stylesheet>
+  <link href="CSS/lightbox.css" type=text/css rel=stylesheet>
+
+  <style type="text/css">
+      
+      div#bigImgBG{
+        background-color: #E7E7E7;
+        border-bottom: 3px solid #b29f94;
+      }
+
+      div#theBestOfWeek{
+        width:1000px;
+        height: 625px;
+        background-image: url(images/indexBestBG.jpg);
+        margin:12px auto;
+        position: relative;
+      }
+      img#theBestOfWeekTitleImg{
+        position: absolute;
+        top:35px;
+        left:31px;
+      }
+      div#theBestOfWeekImgBox{
+        background-color:white;
+        height:316px;
+        width:603px;
+        position: absolute;
+        top:116px;
+        left: 28px;
+      }
+      div#theBestOfWeekImgBox ul{
+        height:316px;
+        width:116px;
+        position: absolute;
+        left:487px;
+        overflow: hidden;
+      }
+      div#theBestOfWeekImgBox ul li{
+        width:116px;
+        height: 76px;
+        border-bottom: 4px solid #111111;
+        position: relative;
+        cursor: pointer;
+      }
+      div#theBestOfWeekImgBox ul li.bestSmallImgHide:hover{
+        background-color:#e7e7e7;
+      }
+      div#theBestOfWeekImgBox ul li.bestSmallImgHide:hover img{
+        opacity:0.7;
+      }
+      div#theBestOfWeekImgBox ul li#bestIMG4{
+        border-bottom: none;
+      }
+      div#theBestOfWeekImgBox ul li.bestSmallImgHide{
+        background-color:#b4b4b4;
+      }
+      div#theBestOfWeekImgBox ul li.bestSmallImgShow{
+        background-color:white;
+      }
+      div#theBestOfWeekImgBox ul li.bestSmallImgHide img{
+        opacity:0.4;
+      }
+      div#theBestOfWeekImgBox ul li.bestSmallImgShow img{
+        opacity:1;
+      }
+      div#theBestOfWeekImgBox ul li img{
+        width:109px;
+        height:67px;
+        position: absolute;
+        top:5px;
+        left:4px;
+      }
+      img#bestBigImgShow{
+        position: absolute;
+        top:14px;
+        left: 13px;
+        width:461px;
+        height:286px;
+      }
+      div#threeImgLink{ /*一周臻选板块下的三个连接块容器*/
+         width:603px;
+         height:124px;
+         border-top:1px solid #2d2d2d;
+         position: absolute;
+         top:465px;
+         left:28px;
+      }
+      a.bestImgLink{/*一周臻选模块左下方三个块链接容器*/
+        display: inline-block;
+        width: 186px;
+        height: 91px;
+        position: absolute;
+        top:32px;
+      }
+      a.bestImgLink:hover{
+        opacity: 0.7;
+      }
+      a#hotSaleLink{/*热卖单品*/
+        left:0;
+      }
+      a#weekDiscountLink{/*一周优惠*/
+        left:208px;
+      }
+      a#loveNewLink{/*最爱新品*/
+        left:417px;
+      }
+      div#bestTrendBox{ /*一周臻选Trend板块容器*/
+        height:544px;
+        width: 314px;
+        position: absolute;
+        left:659px;
+        top:43px;
+        border-left:1px dashed #58473a;
+      }
+      div#bestTrendBox h3{
+        font-family: 'Microsoft YaHei';
+        color:white;
+        font-size: 33px;
+        margin: 0;
+        font-weight: normal;
+        position: absolute;
+        left:25px;
+      }
+      div#bestTrendBox h3 span{
+        font-weight: bold;
+      }
+      a.trendChildBox{ 
+        height: 119px;
+        width: 288px;
+        margin-left: 21px;
+        padding-top: 27px;
+        padding-bottom: 27px;
+        border-bottom: 1px solid #2d2d2d;
+        position: relative;
+        top:50px;
+        display: block;
+      }
+      a.trendChildBox:nth-of-type(3){
+        border-bottom: none;
+      }
+      a.trendChildBox h4{
+        color:#d9b6a0;
+        font-weight: bold;
+        font-size: 12px;
+        position: absolute;
+        margin:0;
+        top:27px;
+        left:130px;
+        padding-bottom: 3px;
+        border-bottom: 2px solid #d9b6a0;
+      }
+      a.trendChildBox p{
+        position: absolute;
+        color:white;
+        width: 160px;
+        height: 60px;
+        font-size: 12px;
+        line-height: 20px;
+        top:60px;
+        left:133px;
+      }
+
+      div#elseImgBox{/*主页下方三个广告图的容器*/
+        margin:0 auto;
+        width:1000px;
+      }
+      div#elseImgBox a{
+        display: inline-block;
+      }
+      div#elseImgBox a#seriesAD{
+        margin-left: 4px;
+      }
+      div#elseImgBox a#masterAD{
+        margin-top: 8px;
+      }
+    </style>
+    <script src="JavaScript/ga.js" async="" type="text/javascript"></script>
+    <script src="JavaScript/prototype.js" type="text/javascript"></script>
+</head>
+<body>
+  <div id="header">
+    <div id="headerBox">
+      <div id="topLeftLink">
+        <a class="topGreyLink">全场购买200元就可以免邮费</a>
+        <a class="topGreyLink" href="优惠专区.html">更多优惠》</a>
+      </div>
+      <div id="topRightLink">
+        <a class="topGreyLink" href="登录.html">登录</a>
+        <a class="topGreyLink" href="注册.html">注册</a>
+        <a class="topGreyLink" href="#"><img width="11" height="13" src="images/logoMyCollect.jpg" />我的收藏</a>
+        <a class="topGreyLink" href="购物车.html"><img width="14" height="13" src="images/logoMarketBasket.jpg" />购物车</a>
+        <a id="payBottom" class="topGreyLink" href="结账.html">结账</a>
+      </div>
+      <div id="topBottomLink">
+        <ul id="topBottomUl">
+          <li><a href="关于企业.html">关于企业</a></li>
+          <li><a href="关于品牌.html">关于品牌</a></li>
+          <li><a href="加盟介绍.html">加盟介绍</a></li>
+          <li id="titleBoxLi"><a href="index.html">品優</a></li>
+          <li><a>收藏本站</a></li>
+          <li id="inputBoxLi"><input type="text" name="搜索" placeholder="搜索您感兴趣的内容"/><button type="button"></button></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="menu">
+    <ul id="menuUl">
+      <li><!-- <img src="images/logoHome.jpg" /> --><a class="homeLink" href="index.html">首页</a></li>
+      <li>
+        <a href="经典优雅.html">经典优雅</a>
+        <div id="classicsUnderneath" class="menuUnderneath">
+          <ul>
+           <li class="logoMenuUnder">CLASSIC</li>
+           <li><a href="#">连衣裙</a></li>
+           <li><a href="#">毛织</a></li>
+           <li><a href="#">外套</a></li>
+           <li><a href="#">呢料外套</a></li>
+           <li><a href="#">羽绒外套</a></li>
+           <li><a href="#">衬衫</a></li>
+           <li><a href="#">T恤</a></li>
+           <li><a href="#">裤装</a></li>
+           <li><a href="#">半截裙</a></li>
+           <li><a href="#">皮衣</a></li>
+           <li><a href="#">皮草</a></li>
+           <li class="adMenuUnder"><a><img /></a></li>
+           <li class="adMenuUnder"><a><img /></a></li>
+         </ul>
+        </div>
+      </li>
+      <li>
+        <a href="都市休闲.html">都市休闲</a>
+        <div id="arderUnderneath" class="menuUnderneath">
+          <ul>
+           <li class="logoMenuUnder">ARDER</li>
+           <li><a href="#">连衣裙</a></li>
+           <li><a href="#">毛织</a></li>
+           <li><a href="#">外套</a></li>
+           <li><a href="#">呢料外套</a></li>
+           <li><a href="#">羽绒外套</a></li>
+           <li><a href="#">衬衫</a></li>
+           <li><a href="#">T恤</a></li>
+           <li><a href="#">裤装</a></li>
+           <li><a href="#">半截裙</a></li>
+           <li><a href="#">皮衣</a></li>
+           <li><a href="#">皮草</a></li>
+           <li class="adMenuUnder"><a><img /></a></li>
+           <li class="adMenuUnder"><a><img /></a></li>
+         </ul>
+        </div>
+      </li>
+      <li id="specialElement"><a href="时尚饰品.html">时尚饰品</a></li>
+      <li>
+        <a href="居家生活.html">居家生活</a>
+        <div id="lifeUnderneath" class="menuUnderneath">
+          <ul>
+           <li class="logoMenuUnder">LIFE</li>
+           <li><a href="#">肌肤护理</a></li>
+           <li><a href="#">生活杂货</a></li>
+           <li class="adMenuUnder"><a><img /></a></li>
+           <li class="adMenuUnder"><a><img /></a></li>
+         </ul>
+        </div>
+      </li>
+      <li><a href="新品制定.html">新品制定</a></li>
+      <li><a href="优惠专区.html">优惠专区</a></li>
+      <li><a href="会员中心.html">会员中心</a></li>
+      <li><a href="帮助中心.html">帮助中心</a></li>
+    </ul>
+
+  </div>
+  <div id="bigImgBG">
+   <div class="picShow" id="picShow">
+        <ul style="display: none;" class="ps-cont">
+          <li><a href="###"><img src="images/indexBigImg/1.jpg" alt="备战五一，加盟补贴2个月租金" height="500" width="1025"></a></li>
+          <li><img src="images/indexBigImg/2.jpg" alt="备战五一，加盟补贴2个月租金" height="500" width="1025"></li>
+          <li><img src="images/indexBigImg/3.jpg" alt="备战五一，加盟补贴2个月租金" height="500" width="1025"></li>
+        </ul>
+        <ul class="ps-tnav" id="nav">
+          <li class="" onclick="mySlider.pos(0)">1</li>
+          <li class="cur" onclick="mySlider.pos(1)">2</li>
+          <li class="" onclick="mySlider.pos(2)">3</li>
+        </ul>
+        <div style="position: absolute; left: 0px; top: 0px; width: 1027px; height: 500px;"><a target="_blank" style="position: absolute; left: 0px; top: 0px; overflow: hidden;"><img src="images/indexBigImg/1.jpg" alt="" height="500" width="0"><span style="position: absolute; left: 0px; top: 0px; font-size: 0px; overflow: hidden; width: 0px; height: 0px; border-color: white transparent transparent white; border-style: solid dashed dashed solid; border-width: 83.3333px 0px;"></span><span style="position: absolute; left: 0px; bottom: 0px; font-size: 0px; overflow: hidden; width: 0px; height: 0px; border-color: transparent transparent white white; border-style: dashed dashed solid solid; border-width: 83.3333px 0px;"></span></a><a target="_blank" style="position: absolute; top: 0px; right: 0px; overflow: hidden;"><img src="images/indexBigImg/2.jpg" alt="" height="500" width="1027"><span style="position: absolute; right: 0px; top: 0px; font-size: 0px; overflow: hidden; width: 0px; height: 0px; border-color: white white transparent transparent; border-style: solid solid dashed dashed; border-width: 0px 513.5px;"></span><span style="position: absolute; right: 0px; bottom: 0px; font-size: 0px; overflow: hidden; width: 0px; height: 0px; border-color: transparent white white transparent; border-style: dashed solid solid dashed; border-width: 0px 513.5px;"></span></a></div>
+      </div>
+    </div>
+
+  <script type="text/javascript" src="JavaScript/3Dpic.js"></script>
+
+  <div id="theBestOfWeek">
+    <img id="theBestOfWeekTitleImg" src="images/bestTitle.jpg" alt="一周臻选">
+    <div id="theBestOfWeekImgBox">
+      <img src="images/indexBestImg/1.jpg" alt="一周臻选图" id="bestBigImgShow">
+      <ul>
+        <li id="bestIMG1" class="bestSmallImgShow"><img src="images/indexBestImg/1.jpg" alt="一周臻选图"></li>
+        <li id="bestIMG2"  class="bestSmallImgHide"><img src="images/indexBestImg/2.jpg" alt="一周臻选图"></li>
+        <li id="bestIMG3"  class="bestSmallImgHide"><img src="images/indexBestImg/3.jpg" alt="一周臻选图"></li>
+        <li id="bestIMG4"  class="bestSmallImgHide"><img src="images/indexBestImg/4.jpg" alt="一周臻选图"></li>
+      </ul>
+    </div>
+    <div id="threeImgLink">
+        <a id="hotSaleLink" href="#" class="bestImgLink"><img src="images/bestLink1.jpg" alt="热卖单品"></a>
+        <a id="weekDiscountLink" href="#" class="bestImgLink"><img src="images/bestLink2.jpg" alt="一周优惠"></a>
+        <a id="loveNewLink" href="#" class="bestImgLink"><img src="images/bestLink3.jpg" alt="最爱新品"></a>
+    </div>
+    <div id="bestTrendBox">
+      <h3><span>TREND</span>品优新动向</h3>
+      <a href="#" id="newsTrend" class="trendChildBox"><!-- 品牌最新动态 -->
+        <img src="images/indexTrendImg/1.jpg" alt="品牌最新动态配图">
+        <h4>[品牌最新动态]</h4>
+        <p>明亮活泼的“小黄裙”倍受明星们的宠爱！Bella Thorne、Miranda Kerr、Moore......</p>
+      </a>
+      <a href="#" id="shopTrend" class="trendChildBox"><!-- 最新店铺动态 -->
+        <img src="images/indexTrendImg/2.jpg" alt="最新店铺动态配图">
+        <h4>[最新店铺动态]</h4>
+        <p>职场It Girl的混搭魔法，跟菲妮·科顿 (Fearne Cotton) 学穿衣：西服...</p>
+      </a>
+      <a href="#" id="starTrend" class="trendChildBox"><!-- 跟明星学搭配 -->
+        <img src="images/indexTrendImg/3.jpg" alt="跟明星学搭配配图">
+        <h4>[跟明星学搭配]</h4>
+        <p>本周最美明星妆发Top 10：范冰冰牡丹妆容最美艳，“白雪公主”丽莉·...</p>
+      </a>
+    </div>
+  </div>
+  <div id="elseImgBox">
+    <a href="#" id="themeAD"><img src="images/indexElseImg/1.jpg" alt="主题产品推荐" /></a>
+    <a href="#" id="seriesAD"><img src="images/indexElseImg/2.jpg" alt="系列产品推荐" /></a>
+    <a href="#" id="masterAD"><img src="images/indexElseImg/3.jpg" alt="主推单品广告" /></a>
+  </div>
+
+  <div id="footer">
+    <div id="footerTopBox">
+      <ul>
+        <li id="footerTopLi1" class="footerTopLi">
+          <p>关注微信</p>
+          <img src="images/footerImg/weixin.jpg" alt="微信二维码" />
+        </li>
+        <li id="footerTopLi2" class="footerTopLi">
+          <a href="#" id="enterpriseWebsite">企业网站</a>
+          <a href="#" id="authorityWeibo">官方微博</a>
+          <a href="#" id="onlineService">在线客服</a>
+        </li>
+        <li id="footerTopLi3" class="footerTopLi">
+          <a href="#" id="returnGoods">7天无条件退货</a>
+          <a href="#" id="toBeVip">VIP全场免邮|成为VIP</a>
+          <a href="#" id="noPostage">单笔消费满699免邮</a>
+        </li>
+        <li id="footerTopLi4" class="footerTopLi">
+          <img src="images/footerImg/sImg.jpg" alt="品优" />
+          <a href="#" id="aboutUs">关于我们</a>
+          <a href="#" id="shoppingFlowPath">购物流程</a>
+          <a href="#" id="returnGoodsFlowPath">退货流程</a>
+          <a href="#" id="payWay">支付方式</a>
+          <a href="#" id="dispatchingExplain">配送说明</a>
+        </li>
+        <li id="footerTopLi5" class="footerTopLi">
+          <p>客服400-000-8888</p>
+          <img src="images/footerImg/zhifubao.jpg" alt="支付宝" />
+          <img src="images/footerImg/caifutong.jpg" alt="财付通" />
+        </li>
+      </ul>
+    </div>
+    <div id="footerBottomBox">
+      <img src="images/footerImg/pinyou.jpg" alt="PINYOU" />
+      <ul>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">经典优雅</a></li>
+        <li><a href="#">都市休闲</a></li>
+        <li><a href="#">时尚饰品</a></li>
+        <li><a href="#">居家生活</a></li>
+        <li><a href="#">新品制定</a></li>
+        <li><a href="#">优惠专区</a></li>
+        <li><a href="#">会员中心</a></li>
+        <li><a href="#">帮助中心</a></li>
+        <li><a href="#">关于企业</a></li>
+      </ul>
+      <p>Copyright ©2010-2019 , All Rights Reserved  粤B2-20080069号</p>
+    </div>
+  </div>
+
+  <script src="JavaScript/jquery-1.10.2.min.js" type="text/JavaScript"></script>
+  <script src="JavaScript/public.js" type="text/JavaScript"></script>
+  <script type="text/JavaScript">
+    $(window).scroll(function () {
+      var ToTopTop = Math.max(document.body.scrollTop || document.documentElement.scrollTop);
+     if(ToTopTop>670){
+       $("div#tempToTop").css({"position":"fixed","top":"80px"});
+     }else{
+       $("div#tempToTop").css({"position":"absolute","top":"750px"});
+       };
+     }) ;
+     $("div#tempToTop").click(function(){
+         $('body,html').animate({scrollTop:0},300);
+     });
+
+     //一周臻选点击功能
+     $("div#theBestOfWeekImgBox ul li").click(function(){
+       $("div#theBestOfWeekImgBox img#bestBigImgShow").attr("src",$(this).children("img").attr("src")); 
+       $(this).siblings().removeClass("bestSmallImgShow");
+       $(this).siblings().addClass("bestSmallImgHide");
+       $(this).addClass("bestSmallImgShow");
+     });
+  </script>
+</body>
+</html>

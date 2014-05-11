@@ -1,0 +1,372 @@
+       *{
+                transition: background 0.2s,color 0.1s,height 0.5s,opacity 0.4s ease-in-out;
+       }
+       body{
+        margin: 0 auto;
+        width:100%;
+        font-family: 'simsun';
+        behavior:url(../htc/csshover.htc);
+       }
+       img{
+        border: 0;
+       }
+       a{text-decoration: none;}
+
+       div#header{
+        background-image: url(../images/divHeaderBG.jpg);
+        width:100%;
+        height: 150px;
+       }
+
+       div#headerBox{
+        margin: 0 auto;
+        width:1000px;
+        height: 150px;
+        position: relative;
+       }
+
+       a.topGreyLink{
+        color:#919191;
+        font-size: 12px;
+       }
+       a.topGreyLink:hover{
+        color:#9e7954;
+       }
+
+      div#topLeftLink,div#topRightLink{
+          margin-top: 35px;
+          position: absolute;
+       }
+       div#topLeftLink{
+         
+       }
+
+       div#topRightLink{
+         right: 0;
+       }
+       div#topRightLink img{
+        margin-right: 5px;
+       }
+
+       a#payBottom{
+        display: inline-block;
+        width: 40px;
+        height: 18px;
+        background-color: #bba99e;
+        text-align: center;
+        line-height: 18px;
+        color: white;
+       }
+
+       div#topBottomLink{
+        height: 77px;
+        position: relative;
+        top:62px;
+       }
+
+       ul{
+        margin:0;
+        padding: 0;
+        list-style: none;
+       }
+
+       ul#topBottomUl{
+        width: 100%;
+        height: 100%;
+        font-size: 12px;
+        color: #545454;
+       }
+       ul#topBottomUl li{
+        float: left;
+        width: 114px;
+        height: 100%;
+        text-align: center;
+        line-height: 80px;
+        border-left: 1px solid #dbdbdb;
+        cursor: pointer;
+       }
+       ul#topBottomUl li a{
+         width: 114px;
+         height: 77px;
+         display: inline-block;
+         color:#545454;
+       }
+       ul#topBottomUl li a:visited{
+        color:#545454;
+       }
+       ul#topBottomUl li:hover{
+        background-color: #f0f0f0;
+       }
+       ul li#titleBoxLi{
+         font-size:30px;
+         width: 280px;
+         font-family: 'Microsoft YaHei';
+         font-weight: 30;
+         color: #9e7954;
+       }
+       ul li#titleBoxLi a{
+        display: inline-block;
+        width: 280px;
+        height: 77px;
+       }
+       ul li#titleBoxLi a:visited{
+        color: #9e7954;
+       }
+       ul li#inputBoxLi{
+        
+        cursor: default;
+       }
+       ul li#inputBoxLi input{
+         width: 200px;
+         height: 22px;
+         position: absolute;
+         top:26px;
+         right: 25px;
+
+       }
+       ul li#inputBoxLi:hover{
+        background-color: #e7e7e7;
+       }
+       ul li#inputBoxLi button{
+         width: 28px;
+         height: 28px;
+         border: none;
+         background-color: none;
+         background-image: url(../images/buttonSelectBG.jpg);
+         position: absolute;
+         top:26px;
+         right: 0px;
+       }
+
+      div#menu{
+        width: 100%;
+        height:42px;
+        background-color: #d0d0d0;
+        border-bottom:7px solid #2f2f2f;
+        z-index: 5;
+      }
+
+      ul#menuUl{
+        margin:0 auto;
+        width: 1000px;
+        height: 42px;
+      }
+      ul#menuUl li{
+        float:left;
+        height: 42px;
+        /*width: 102px;*/
+        text-align: center;
+        /*position: relative;*/
+      }
+      ul#menuUl li a{
+        font-size: 12px;
+        font-family: 'simsun';
+        color: #2f2f2f;
+        display: inline-block;
+        width: 102px;
+        height: 42px;
+        line-height: 42px;
+      }
+      ul#menuUl li img{
+        position: absolute;
+        z-index: 1;
+        right: 3px;
+        top:2px;
+      }
+      ul#menuUl li#specialElement{
+        margin-right: 80px;
+      }
+      ul#menuUl li a.homeLink{
+        color:#9b8476;
+      }
+      ul#menuUl li a:hover{
+        background-color: #2f2f2f;
+        color:#e7e7e7;
+      }
+      
+      ul#menuUl div.menuUnderneath{/*下拉菜单容器*/
+        width:100%;
+        height:0px;
+        background-color: black;
+        opacity: 0.9;
+        position: absolute;
+        left:0;
+        opacity: 0;
+        z-index:5;
+      }
+      ul#menuUl div.menuUnderneath ul{/*下拉菜单*/
+        width:1000px;
+        margin:0 auto;
+        height: 68px;
+        margin-top:23px;
+        display: none;/*默认隐藏导航下拉菜单*/
+      }
+
+
+
+      ul#menuUl div.menuUnderneath li a{ /*下拉菜单链接*/
+        width:auto;
+        padding:13px 10px;
+        color:#5f9eb3;
+      }
+      div#menu ul#menuUl div.menuUnderneath li a:hover{ /*下拉菜单链接触发伪类*/
+        background-color: inherit;
+        color:#ff802e;
+      }
+      ul#menuUl div.menuUnderneath li.logoMenuUnder{ /*下拉菜单左边文字logo*/
+        font-family: 'Constantia','MS Serif';
+        font-size: 30px;
+        color:#5f9eb3;
+        width: auto;
+        padding:13px 15px 13px 0;
+        border-right: 1px solid #ff802e;
+        margin-right: 10px;
+      }
+
+      ul#menuUl li:hover div.menuUnderneath{/*下拉菜单触发事件*/
+        height: 115px;
+        opacity: 0.9;
+      }
+      ul#menuUl li:hover div.menuUnderneath ul{/*下拉菜单触发事件*/
+        display: block;
+      }
+
+
+
+      div#footer{
+        height: 222px;
+        width: 100%;
+        background-image: url(../images/footBG.jpg);
+        margin-top: 10px;
+      }
+      div#footer p,div#footer a{
+        text-decoration: none;
+        font-size: 12px;
+        color:#838383;
+      }
+      div#footer a{
+        display: block;
+        height: 22px;
+        line-height: 22px;
+        text-align: right;
+      }
+      div#footer a:hover{
+        color:#9E7954;
+      }
+      div#footerTopBox{
+        margin: 0 auto;
+        width: 1000px;
+        padding-top: 19px;
+        padding-bottom: 10px;
+        height: 117px;
+      }
+      li.footerTopLi{
+        float:left;
+        height: 117px;
+        border-right: 1px solid #cccccc;
+      }
+      li#footerTopLi1{
+        width:78px;
+        padding-left: 65px;
+        padding-right: 27px;
+      }
+      li#footerTopLi1 p{
+        margin-top:5px; 
+        margin-bottom: 13px;
+      }
+      li#footerTopLi2{
+        width: 80px;
+        padding: 0 25px;
+      }
+        li#footerTopLi2 a,li#footerTopLi3 a{
+          margin-top: 3px;
+          margin-bottom: 18px;
+          background-repeat: no-repeat;
+        }
+        li#footerTopLi2 a#enterpriseWebsite{
+          background-image: url(../images/footerImg/sLogo1.jpg);
+        }
+        li#footerTopLi2 a#authorityWeibo{
+          background-image: url(../images/footerImg/sLogo2.jpg);
+        }
+        li#footerTopLi2 a#onlineService{
+          background-image: url(../images/footerImg/sLogo3.jpg);
+        }
+      li#footerTopLi3{
+        width: 160px;
+        padding: 0 30px;
+      }
+        li#footerTopLi3 a{
+          text-align:left;
+          padding-left: 30px;
+        }
+        li#footerTopLi3 a#returnGoods{
+          background-image: url(../images/footerImg/sLogo4.jpg);
+        }
+        li#footerTopLi3 a#toBeVip{
+          background-image: url(../images/footerImg/sLogo5.jpg);
+        }
+        li#footerTopLi3 a#noPostage{
+          background-image: url(../images/footerImg/sLogo6.jpg);
+        }
+
+      li#footerTopLi4{
+        width: 200px;
+        padding: 0 25px;
+      }
+        li#footerTopLi4 img{
+          float:left;
+        }
+        li#footerTopLi4 a{
+          float:right;
+          width: 48px;
+        }
+      li#footerTopLi5{
+        width: 140px;
+        padding-left:25px;
+        border-right: none;
+      }
+        li#footerTopLi5 p{
+          padding-left: 25px;
+          height: 22px;
+          line-height: 22px;
+          background-image: url(../images/footerImg/sLogo7.jpg);
+          background-repeat: no-repeat;
+        }
+        li#footerTopLi5 img{
+          margin-top: 30px;
+          margin-left: 8px;
+        }
+      div#footerBottomBox{
+        height: 41px;
+        padding-top: 14px;
+        width: 1000px;
+        margin:0 auto;
+        position: relative;
+      }
+        div#footerBottomBox img{
+          margin-left: 12px;
+        }
+      div#footerBottomBox ul{
+        position: absolute;
+        left:130px;
+        top:15px;
+      }
+      div#footerBottomBox ul li{
+        float:left;
+        width: 80px;
+        border-right: 1px solid #767676;
+      }
+      div#footerBottomBox ul li:last-child{
+        border-right: none;
+      }
+        div#footerBottomBox ul li a{
+          text-align: center;
+        }
+      div#footerBottomBox p{
+        color:#707070;
+        position: absolute;
+        top:35px;
+        left:575px;
+        margin: none;
+      }

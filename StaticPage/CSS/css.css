@@ -1,0 +1,213 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url(basic.css);
+
+.pic_switch {background:url(../images/pic_bg.gif);}
+.picShow{position:relative; width:1000px; height:450px; margin:0 auto;overflow:hidden;}
+.home_middle{ position:relative;text-align:center; width: 1230px; margin: 20px auto;}
+.home_middle .pic{float: left;width:960px;}
+.home_middle .news{width: 250px;  float: right;}
+.home_middle .news_head{
+	height: 20px;
+	margin: 5px 0;
+	background: url(../images/news_icon.gif) no-repeat;
+	border-bottom: solid 1px;
+	text-align: right;
+	font-size: 11px;
+	line-height: 20px;
+}
+
+.home_middle .list {}
+.home_middle .list li{
+	margin-left: 10px;
+	padding-right: 32px;
+	list-style-type: disc;
+	text-align: left;
+	overflow: hidden;
+	height: 22px;
+	line-height: 22px;
+}
+.home_middle .hot{background:url(../images/icon_hot.gif) no-repeat right 5px;}
+
+/* banner */
+.banner{margin: 0 auto; width: 1100px;}
+
+.main{width: 1080px;_width: 1090px; margin:0 auto;}
+#left {width: 230px;_width:190px; float: left;}
+#left ul{}
+#left ul li, #left ul li a{height: 30px; line-height: 30px; font-size: 14px; padding-left: 10px;}
+#left ul .onclick{font-weight:bold;}
+#left ul .clorestore{padding-top:60px;_padding-top:5px;}
+#left ul .clorestores{padding-top:120px;_padding-top:5px;}
+#left ul .clorest{padding-top:90px;_padding-top:5px;}
+
+#right {width: 850px; float: left; padding-top: 50px; line-height: 24px; text-indent: 24px; font-family: verdana, Arial, "宋体"; color: #666;}
+#right .product{width: 720px; margin: 0 auto;}
+#right .product ul{}
+#right .product ul li{
+	float: left;
+	width: 100px;
+	height: 60px;
+	margin: 8px;
+	border: solid 1px #666666;
+	overflow: hidden;
+	text-indent: 0;
+}
+#right .product ul li{ position: relative; overflow: hidden; text-align: center; vertical-align: middle; display: table-cell;}
+#right .product ul li a{margin: 0; padding:0; position: static;+position: absolute; top: 50%;}
+#right .product ul li a img{margin: 0; padding: 0; border: 0; position: static; +position: relative; top: -50%; left: -50%; width: 100px;}
+/* 设计师频道 */
+
+/*  文章 */
+.news_list{width: 640px; float: left;}
+.news_pic{width: 200px; float: left; text-indent:0; margin-left: 8px; _margin-left: 4px;}
+.news_pic img{width: 200px; margin: 1px;}
+
+/* 新闻头条 */
+.news_first{
+	height: 206px;
+	border: solid 1px #666;
+	padding: 2px;
+	background:#FFF5F3;
+}
+.news_first .img{
+	float: left;
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+}
+.news_first .news{
+	float: left;
+	width: 414px;
+	margin: 0 10px;
+	_margin: 0 5px;
+}
+.news_first .news h3{
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: bold;
+	text-indent: 0;
+}
+.news_list ul{text-indent: 0;}
+.news_list ul li{
+	height: 30px;
+	line-height: 30px;
+	border-bottom: 1px dashed #666;
+	text-indent: 0;
+	overflow: hidden;
+	text-indent:0;
+}
+.news_list ul li a{width: 85%; display: inline-block;}
+.news_content h1{ font-size: 20px; font-weight:bold; height: 28px; line-height: 28px; text-align: center;}
+.news_content .pubtime{ text-align:center; font-size: 11px; font-style:italic;height: 28px; line-height: 28px;}
+.mainview{width:900px;margin:10px 20%;color:#666;}
+.news_content div{line-height:25px;text-indent:1.5em;}
+.clotherjoin{padding-top:120px;}
+.zhanghu{text-align:center;}
+/*D学院*/
+#leftcollege,#rightcollege{float:left;margin-top:22px;}
+#rightcollege{margin-left:30px;}
+.Dcollegeleft{margin-left:-10px;width:168px;height:428px;background-color:#ececee;}
+.dcollege{padding:40px 10px 10px 10px;}
+.severtop{width:888px;background:url(../images/ds.jpg) no-repeat;text-align:center;}
+.fashtop{width:888px;background:url(../images/Df1.jpg) no-repeat;text-align:center;}
+.handbooktop{width:888px;background:url(../images/Dc.jpg) no-repeat;text-align:center;color:black;font-size:14px;}
+.managertop{width:888px;background:url(../images/Dm2.jpg) no-repeat;text-align:center;color:black;}
+.managertop p,.fashtop p{margin-left:-550px;color:black;font-weight:bold;}
+.handbooktop h4{font-weight:bold;margin-left:-550px;}
+.handbooktop h1{text-align:left;font-weight:bold;margin-left:250px;line-height:25px;
+               background:url(../images/Dc3.jpg) left center no-repeat;text-indent:2em;}
+.handbooktop p{text-align:left;margin-left:150px;line-height:25px;}
+.handbookcon {margin:40px 0;width:730px;text-align:left;margin-left:150px;line-height:25px;}
+.fashfont{color:black;text-indent:2em;line-height:25px;text-align:left;width:700px;margin-left:100px;}
+.managecon{text-indent:2em;line-height:25px;text-align:left;width:700px;margin-left:100px;}
+.fashtop p,.managertop p{margin-top:30px;}
+.conheight{margin:30px 0;}
+.severtop p{height:30px;margin-left:-550px;color:black;font-weight:bold;}
+.severimgup{padding-top:110px;}
+.fonti{padding:10px;}
+.Dcollegeleft p{width:135px;padding:5px 20px;line-height:18px;color:#402b1b;letter-spacing:2px;}
+.collegetop{background:url(../images/dbg.jpg);width:888px;height:231px;}
+.collegetop p{width:630px;padding:45px 20px 20px 35px;line-height:24px;color:black;}
+.collegebtm{background:url(../images/collegebtm.jpg) no-repeat;width:892px;height:418px;color:black;}
+.collegebtmleft,.collegebtmrig{float:left;padding:170px;line-height:18px;}
+.collegebtmleft ul{padding-left:50px;text-indent:2em;}
+.mleftmid{padding-top:30px;}
+.mleftbtm{padding-top:60px;}
+.togbox ul li{background:url(../images/dxing.jpg) no-repeat;}
+.collegebtmrig{text-indent:2em;}
+/*邮件*/
+.homepagecon li{float:left;width:210px;height:150px;_height:180px;padding:30px 0px;}
+.yunaimg{padding-bottom:40px;}
+.yunamail{padding:15px 0;color:black;font-size:14px;}
+.upline {color:black;font-size:16px;}
+.upline span{text-decoration:underline;color:red;font-weight:bold;}
+.joinliuc{font-weight:bold;font-size:14px;margin:20px 0 10px 0;}
+.jointablexx tr td{border:1px solid #ccc;text-align:center;}
+.joincon{color:black;text-indent:1px;}
+.jointable tr td{border:1px solid #ccc;text-align:center;}
+.jointable tr{height:35px;}
+.jointable tr th{text-align:center!important;border:1px solid #ccc;}
+.tabletr{background-color:#81FFFF;}
+.joincon table{margin-left:20px;}
+.homepagemh li{float:left;width:280px;_width:275px;height:220px;padding:20px 0;}
+/* 杂志 */
+
+.magazine{width: 760px; margin: 0 auto;}
+.magazine ul{}
+.magazine ul li{ width: 170px; height: 270px; float:left; margin: 10px; text-align:center; text-indent:0;}
+.magazine ul li .text{height: 20px; line-height: 20px; background:#FF0; font-size: 14px; margin:10px auto; text-align:center;}
+/* 在线咨询 */
+.feedback{}
+.feedback .text{ font-size: 14px;}
+.feedback .text h1{ font-size: 16px; font-weight: bold; display:inline;}
+.feedback .text a{
+	display:inline-block;
+	font-size: 16px;
+	margin: 2px;
+	background: #333;
+	color: #FFF;
+	height: 25px;
+	width: 100px;
+}
+
+.form {height: 449px; background:url(images/fashion_r9_c1.jpg);}
+.form .title{height: 65px;}
+.form .cont{width: 497px; height: 384px; float:left;}
+.form .warm{width: auto; height: 30px; line-height: 30px; text-align:center;}
+.form ul{width: 60%; margin: 0 auto;}
+.form ul span {
+	display:inline-block;
+	width: 70px;
+	vertical-align: middle;
+}
+.form ul input{}
+.form .w70{width: 100px;}
+.form ul li{height: 30px; line-height: 30px;}
+.form .content{height: 90px;}
+.form .content span{height: 90px; line-height:90px; margin:0;}
+.form .content textarea{vertical-align:middle; width: 200px; height: 90px;}
+.form .sbt{margin-top: 10px;}
+
+.form .h80, .h80 a{height: 140px; line-height: 140px; font-size: 22px; color:#FFF; text-decoration: none; font-family: "黑体";}
+.form .telephone, .form .telephone img{color:#D9057E; vertical-align:middle; font-size: 20px;}
+.form .telephone span{ font-weight:bold;}
+.form .contact{width: auto;}
+/* 在线申请 */
+.applyTable{width: 100%; border: solid 1px #666;}
+
+.mainevent{width:1160px;_width:1180px;margin:0 auto;}
+#lefteven ul li{line-height:25px;font-size:14px;padding-left:20px;}
+#lefteven,#righteven{float:left;}
+#lefteven ul .onclick{font-weight:bold;}
+#lefteven{width:180px;}
+#righteven{width:980px;_width:1000px;padding-top:30px;}
+.eventtop,.eventtopr{float:left;}
+.eventtopl li{text-indent:0px;color:#0f0f0f;line-height:25px;}
+.eventtopl{width:460px;_width:465px;text-align:right;}
+.eventtopl img{margin-left:-25px;}
+.eventtopr{width:495px;_width:480px;color:#0f0f0f;padding-left:20px;}
+.eventtop h1{padding:8px 0;font-size:24px;color:#ccc;}
+.eventtopr h1{padding:8px 0;font-size:24px;color:#ccc;}
+.eventtopr li{line-height:25px;}

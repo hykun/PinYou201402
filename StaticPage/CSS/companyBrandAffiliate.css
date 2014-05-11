@@ -1,0 +1,147 @@
+div#menu{
+        border-bottom:7px solid #f7f7f7;/*rewrite*/
+        border-top: 7px solid #e4d3c3;/*special*/
+        background-color: white;/*special*/
+        position: relative;
+        top:-11px;
+      }
+      ul#menuUl li a{
+        width: 115px;
+        font-family: 'SimHei';
+      }
+      ul#menuUl li a.homeLink{
+         color: #826d2e;
+      }
+      ul#menuUl li a:hover{
+        background-color: #ffffff;/*rewrite*/
+        color:#826d2e;/*rewrite*/
+      }
+
+      div#secondTitleBG{
+        height: 100px;
+        width: 100%;
+        background-color: #e8e8e8;/*rewrite*/
+        margin-top: 1px;
+        border-bottom:7px solid #cecece;/*rewrite*/
+      }
+
+      div#secondTitleBox{
+        margin: 0 auto;
+        width: 1000px;
+      }
+      div#secondTitle{
+        position: relative;
+        top: 36px;
+        border-left: 5px solid #8ebbc1;/*rewrite*/
+        padding-left: 5px;
+      }
+      div#secondTitle p{
+        margin: 0;
+        color: #474747;/*rewrite*/
+        font-size: 18px;
+        font-weight:bold;
+      }
+      div#secondTitle p.EngText{
+        font-size: 14px;
+        margin-bottom: 2px;
+      }
+        div#secondTitle p span{
+          margin-left: 4px;
+        }
+
+      ul#topBottomUl li a.mainA{/*special*/
+        background-color: #e4d3c3;
+        font-family: 'SimHei';
+        font-size: 18px;
+        color: #b08f52;
+      }
+
+      div#mainBox{
+        width:1000px;
+        border-bottom:0;
+        border-right:0;
+        border-top:1px;
+        border-left:1px;
+        border-style: solid;
+        border-color: #cccccc;
+        margin:0 auto;
+        position: relative;
+        margin-top:6px;
+        margin-bottom:100px;
+      }
+
+      div#mainBox ul{
+        width:200px;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      div#mainBox ul li{
+        height:30px;
+        width:200px;
+        text-align: center;
+        border-bottom:1px;
+        border-right:1px;
+        border-top:0;
+        border-left:0;
+        border-style: solid;
+        border-color: #cccccc;
+        font-family: 'SimSun';
+        font-size: 12px;
+        color:#a7a7a7;
+        line-height: 30px;
+        background-color: #e8e8e8;
+        cursor:pointer;
+      }
+      div#mainBox ul li#liLink1{
+        background-color: white;
+        border-right: none;
+      }
+      div.divPage{
+        width:780px;
+        position: relative;
+        left:225px;
+      }
+      div.divPage h3{ /*内容部分首行标题*/
+        font-family: 'SimSun';
+        font-size: 12px;
+        color:#545454;
+        margin: 40px 0;
+      }
+      div.divPage h4{ /*内容部分图片下面的标题*/
+        font-family: 'SimSun';
+        font-size: 12px;
+        color:#545454;
+        margin: 80px 0 0 220px;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #545454;
+        display: inline-block;
+      }
+      div.divPage h5{/*内容部分图片下面的标题下的英文*/
+        font-family: Arial;
+        font-size: 12px;
+        color:#545454;
+        margin:20px 0 0 220px;
+        letter-spacing:1px;
+        display: inline-block;
+      }
+      div.divPage h5 span{color:#bba99e;}
+
+      div.divPage div{
+        margin:80px 0 0 220px;
+        border-left: 4px solid #e4d3c1;
+        padding-left: 20px;
+        font-family: 'SimSun';
+        font-size: 12px;
+        color:#545454;
+      }
+      div.divPage div h6{
+        font-size: 12px;
+        margin-bottom:8px;
+      }
+      div.divPage div p{
+        margin-top: 20px;
+        line-height: 23px;
+      }
+      div#divPage2,div#divPage3,div#divPage4{display: none;}

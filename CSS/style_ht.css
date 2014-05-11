@@ -1,0 +1,171 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+#box {
+	height: auto;
+	width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: "ËÎÌו";
+	font-size: 16px;
+	color: #000000;
+}
+#top {
+	background-color:#FBDBCA;
+	background-repeat: no-repeat;
+	float: left;
+	height: 71px;
+	width: 1200px;
+	margin-bottom: 5px;
+	position:relative;
+}
+#top h1{
+	font-family:'Microsoft YaHei';
+	font-size:25px;
+	color:#E45B13;
+	position:absolute;
+	top:15px;
+	left:25px;
+}
+#toptiao {
+	height: 40px;
+	width: 400px;
+	margin-top: 20px;
+	text-align: right;
+	margin-left: 470px;
+}
+#bottom {
+	background-color:#FBDBCA;
+	background-repeat: no-repeat;
+	height: 27px;
+	width: 1200px;
+	float: left;
+	margin-top: 5px;
+}
+#mid {
+	float: left;
+	height: auto;
+	width: 1200px;
+}
+#left {
+	float: left;
+	height: 500px;
+	width: 180px;
+	background-image: url(images/ht_02_15.gif);
+	background-repeat: repeat-y;
+}
+#right {
+	float: left;
+	height: 490px;
+	width: 1020px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+}
+#left_top {
+	float: left;
+	height: 43px;
+	width: 180px;
+	background-color:#F08045;
+	background-repeat: no-repeat;
+	text-align:center;
+	color:white;
+	font-size:18px;
+	font-family:'Microsoft YaHei';
+	line-height:43px;
+}
+
+#left_mid {
+	float: left;
+	height: 450px;
+	width: 175px;
+	margin-left: 6px;
+	border-bottom-width: 7px;
+	border-bottom-style: solid;
+	border-bottom-color: #5393db;
+}
+#right span{
+	color:#E45B13;
+}
+#right_top {
+	background-color:#F8C0A3;
+	background-repeat: no-repeat;
+	float: left;
+	height: 20px;
+	width: 990px;
+	padding:3px 0 3px 5px;
+}
+#right_top01 {
+	background-color:#F8C0A3;
+	background-repeat: no-repeat;
+	float: left;
+	height: 29px;
+	width: 990px;
+
+}
+#right_mid {
+	float: left;
+	height: auto;
+	width: 99px;
+}
+#tiao {
+	padding: 3px;
+	float: left;
+	height: 24px;
+	width: 990px;
+	border: 1px solid #c6e8ff;
+	margin-top: 5px;
+}
+#tiao input {
+	color: #666666;
+	border: 1px solid #CCCCCC;
+}
+.word01 {
+	font-family: "Microsoft YaHei";
+	font-size: 16px;
+	font-weight: bold;
+	color: #006699;
+}
+#right_foot {
+	height: 29px;
+	width: 88px;
+	text-align: center;
+	margin-top: 5px;
+	float: left;
+	position:relative;
+	top:350px;
+}
+#right_foot01 {
+	float: left;
+	height: 45px;
+	width: 990px;
+	border: 1px solid #5896dc;
+	margin-top: 5px;
+	background-color:#FBE8DE;
+	line-height: 20px;
+	text-align: right;
+	padding-right: 5px;
+	padding-left: 5px;
+	position:relative;
+	top:450px;
+}
+#boxdl {
+	height: 205px;
+	width: 262px;
+	margin-top: 180px;
+	margin-right: auto;
+	margin-left: auto;
+	background-repeat: no-repeat;
+	padding:20px;
+	background-color:#6DC2E9;
+	font-family: "ËÎÌו";
+	font-size: 16px;
+	color: #000000;
+}
+#boxdl input {
+	font-family: "ËÎÌו";
+	font-size: 16px;
+	color: #0099CC;
+	border: 1px solid #CCCCCC;
+}
